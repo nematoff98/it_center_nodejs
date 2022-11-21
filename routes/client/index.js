@@ -1,0 +1,28 @@
+const Router = require('express')
+const router = new Router()
+
+const contactRouter = require('./ContactRouter')
+const mainRouter = require('./MainRouter')
+const forCourseRouter = require('./ForCourseRouter')
+const learnCourseRouter = require('./LearnCourseRouter')
+const moreInfoRouter = require('./MoreInfoRouter')
+const courseProgramRouter = require('./CourseProgramRouter')
+const courseInstructorRouter = require('./CourseInstructorRouter')
+const haveCourseRouter = require('./HaveCourseRouter')
+const costEducationRouter = require('./CostEducationRouter')
+const enrolledCourseRouter = require('./EnrolledCourseRouter')
+const moreInformationRouter = require('./MoreInformationRouter')
+
+router.use('/contact', contactRouter)
+router.use('/main', mainRouter)
+router.use('/for-course', forCourseRouter)
+router.use('/learn-course', learnCourseRouter)
+router.use('/more-info', moreInfoRouter)
+router.use('/course-program', courseProgramRouter)
+router.use('/course-instructor', courseInstructorRouter)
+router.use('/have-course', haveCourseRouter)
+router.use('/cost-education', costEducationRouter)
+router.use('/enrolled-course', enrolledCourseRouter)
+router.use('/more-information', moreInformationRouter)
+
+module.exports = router
